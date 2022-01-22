@@ -1,22 +1,31 @@
+/* General section */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
+    color: rgb(80, 80, 80);
+    margin: 0;
 }
 
+.margin-zero {
+    margin: 0;
+}
+
+/* Header section */
 header {
     width: 100%;
-    height: 40px;
+    height: 64px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+/* Header logo */
 .logo {
     display: flex;
     justify-content: center;
-    margin-left: 24px;
-}
-
-.logo img {
+    align-items: center;
+    margin: 0px 24px;
+    height: 32px;
 }
 
 .colmar {
@@ -28,17 +37,263 @@ header {
     color: grey;
 }
 
+/* Header navigation */
 header nav {
-    margin-right: 24px;    
+    margin-right: 24px;        
+    height: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .divider {
     width: 16px;
+    height: 100%;
     background-color: turquoise;
 }
 
-/* header nav li {
-    display: inline-block;
-} */
+/* Main section */
+
+/* Banner section */
+.banner {
+    background-color: rgb(201, 201, 201);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.banner img {
+    width: 60%;
+    margin: 32px 34px;
+}
+
+.banner-writing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-right: 24px;
+}
+
+.banner-writing h1 {
+    font-weight: 900;
+}
+
+.banner-writing p {
+    font-weight: 600;
+}
+
+.banner-button {
+    width: 100%;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-button p {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0;
+    font-weight: 300;
+}
+
+/* General information section */
+
+.information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.practice-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding: 32px 24px;
+    border-right: 1px solid rgb(201, 201, 201);
+}
+.practice-quote img {
+    margin-bottom: 32px;
+}
+
+.practice-quote h1 {
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.main-text {
+    margin-top: 0;
+}
+
+.footer-text {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.general-info {
+    width: 40%;
+}
+
+.info-sub-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid rgb(201, 201, 201);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    margin: 0;
+    padding: 16px;
+}
+
+.info-sub-section img {
+    width: 35%;
+    height: auto;
+}
+
+.info-sub-section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;    
+    margin: 24px;
+}
+
+.info-sub-section-paragraph {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0;
+}
+
+.read-more {
+    color: rgb(81,148,227);
+}
+
+/* Start learning section */
+
+.start-learning {
+    background-color: rgb(201, 201, 201);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.learning-heading {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 72px 32px 72px;
+}
+
+.courses-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.course {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 16px;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+.course img {
+    height: auto;
+}
+
+.course-text {
+    margin: 16px 16px 24px 16px;
+}
+
+/* Thesis exibit */
+
+.thesis-exhibit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.exhibit-heading {
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+.exhibit-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.video-section {
+    width: 60%;
+    margin: 32px 24px 24px 24px;
+}
+
+.video-section video {
+    width: 100%;
+}
+
+.exhibit-infos {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    width: 40%;
+    margin-top: 32px;
+}
+
+.exhibit-info-sub-section {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+}
+
+.exhibit-info-sub-section img {
+    margin: 16px;
+    width: 35%;
+    height: auto;
+}
+
+.exhibit-info-sub-section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 65%;    
+    margin: 24px;
+}
+
+.exhibit-info-sub-section-text h1 {
+    margin: 10px;
+}
+
+.exhibit-info-sub-section-text p {
+    margin: 10px;
+}
+
+/* Footer section */
+
+footer {
+    border-top: 1px solid rgb(201, 201, 201);
+}
+
+footer p {
+    font-size: 0.85rem;
+    margin-top: 16px;
+    margin-left: 24px;
+}
