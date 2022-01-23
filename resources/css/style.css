@@ -10,6 +10,10 @@ body {
     margin: 0;
 }
 
+.margin-top-images {
+    margin-top: 32px;
+}
+
 /* Header section */
 header {
     width: 100%;
@@ -120,6 +124,35 @@ header nav {
     font-weight: 300;
 }
 
+@media only screen and (max-width: 480px) {
+    .banner {
+        background-color: rgb(201, 201, 201);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .banner img {
+        margin: 0;
+        width: 100%;
+    }
+
+    .banner-writing {
+        width: auto;
+        margin: 32px 16px;
+    }
+
+    .banner-writing h1 {
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+
+    .banner-paragraph {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+}
+
 /* General information section */
 
 .information {
@@ -193,6 +226,50 @@ header nav {
     color: rgb(81,148,227);
 }
 
+@media only screen and (min-width: 481px) {
+    .mobile-info-image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .practice-quote {
+        display: none;
+    }
+
+    .desktop-info-image {
+        display: none;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .general-info {
+        width: auto;
+        margin: 16px;
+    }
+
+    .info-sub-section {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: none;
+        padding: 0;
+    }
+
+    .info-sub-section img {
+        width: auto;
+    }
+
+    .info-sub-section-text {
+        width: auto;
+        margin: 24px 16px 32px 16px;
+    }
+}
+
 /* Start learning section */
 
 .start-learning {
@@ -236,6 +313,45 @@ header nav {
 
 .course-text {
     margin: 16px 16px 24px 16px;
+}
+
+@media only screen and (min-width: 481px) {
+    .start-learning-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .start-learning {
+        display: none;
+    }
+
+    .start-learning-mobile {
+        border: 1px solid rgb(201, 201, 201);;
+    }
+
+    .learning-heading-mobile {
+        font-size: 2.8rem;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 32px;
+        margin-bottom: 12px;
+    }
+
+    .courses-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 16px 28px 16px;
+    }
+
+    .courses-mobile h1 {
+        background-color: rgb(201, 201, 201);
+        margin: 0;
+        padding: 16px 16px 24px 16px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
 }
 
 /* Thesis exibit */
@@ -304,6 +420,34 @@ header nav {
 
 .exhibit-info-sub-section-text p {
     margin: 10px;
+}
+
+@media only screen and (min-width: 481px) {
+    .thesis-exhibit-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .thesis-exhibit {
+        display: none;
+    }
+
+    .thesis-exhibit-mobile {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .exhibit-heading-mobile {
+        font-size: 2.8rem;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    video {
+        width: auto;
+    }
 }
 
 /* Footer section */
