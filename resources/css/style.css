@@ -84,12 +84,12 @@ header nav {
     background-color: rgb(201, 201, 201);
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .banner img {
     width: 60%;
-    margin: 32px 34px;
+    margin: 32px 24px;
 }
 
 .banner-writing {
